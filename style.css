@@ -1,0 +1,291 @@
+body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff0080;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #eee;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #ffc0cb;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 50px;
+            height: 2px;
+            background-color: #e7a1b0;
+            transform: translateX(-50%);
+        }
+
+        /* About Me Section */
+        .about-section .bio {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            animation: fadeSlideIn 1s ease-in-out;
+        }
+
+        .about-section .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section .hobbies,
+        .about-section .fun-facts {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e7a1b0;
+            border-radius: 5px;
+        }
+
+        .about-section h3 {
+            color: #e7a1b0;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .about-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .about-section ul li {
+            background-color: #e7a1b0;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .about-section ul li i {
+            color: #eee;
+        }
+
+        /* School Works Section */
+        .works-section {
+            background-color: #fff0080;
+            padding: 30px 0;
+        }
+
+        .works-section .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .works-section .work-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.8s ease-in-out;
+        }
+
+        .works-section .work-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .works-section .work-item h3 {
+            margin: 15px;
+            color: #333;
+        }
+
+        .works-section .work-item p {
+            margin: 0 15px 15px;
+            color: #666;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            padding: 30px 0;
+        }
+
+        .skills-section .skills-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .skills-section .skills-list li {
+            margin-bottom: 20px;
+            animation: slideInLeft 0.7s ease-in-out;
+        }
+
+        .skills-section .skill-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .skills-section .skill-info i {
+            font-size: 1.2em;
+            color: #007bff;
+            width: 20px;
+            text-align: center;
+        }
+
+        .skills-section .progress-bar {
+            background-color: #eee;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skills-section .progress {
+            background-color: #800080;
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: #ff0080;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .contact-section .contact-info {
+            margin-bottom: 20px;
+            animation: zoomIn 0.6s ease-in-out;
+        }
+
+        .contact-section .contact-info p {
+            margin: 10px 0;
+            color: #ff0080;
+        }
+
+        .contact-section .contact-info i {
+            color: #ff0080;
+            margin-right: 5px;
+        }
+
+        .contact-section .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-section .message-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .contact-section .message-box h3 {
+            color: #ff0080;
+            margin-top: 0;
+        }
+
+        .contact-section .social-links {
+            margin-top: 20px;
+            animation: bounceIn 0.8s ease-in-out;
+        }
+
+        .contact-section .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5em;
+            color: #ff0080;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-section .social-links a:hover {
+            color: #0056b3;
+        }
+
+        /* Animations */
+        @keyframes fadeSlideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            60% {
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</body>
+</html>
